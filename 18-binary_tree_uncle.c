@@ -3,7 +3,7 @@
 /**
  * binary_tree_uncle - finds the uncle of a node
  * @node: pointer to the node to find the uncle
- * Returns: pointer to the uncle node
+ * Return: pointer to the uncle node
 */
 
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)

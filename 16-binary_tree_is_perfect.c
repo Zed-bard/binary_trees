@@ -3,7 +3,7 @@
 /**
  * tree_height - calculates height of a tree
  * @tree: pointer to the root node of the tree
- * Returns: the height of the tree or 0
+ * Return: the height of the tree or 0
 */
 
 size_t tree_height(const binary_tree_t *tree)
@@ -22,7 +22,7 @@ size_t tree_height(const binary_tree_t *tree)
 /**
  * binary_tree_is_perfect - Checks if a binary tree is perfect
  * @tree: pointer to the root node of the tree to check
- * Returns: 1 if tree is perfect or 0
+ * Return: 1 if tree is perfect or 0
 */
 
 int binary_tree_is_perfect(const binary_tree_t *tree)
@@ -39,7 +39,8 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	{
 		if (left_height == right_height)
 		{
-			if (binary_tree_is_perfect(tree->left) && binary_tree_is_perfect(tree->right))
+			if (binary_tree_is_perfect(tree->left) && 
+			binary_tree_is_perfect(tree->right))
 				return (1);
 		}
 	}
