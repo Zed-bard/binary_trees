@@ -48,6 +48,17 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 /* Second chance Advanced Part */
+/* 100-binary_tree.c */
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);
+
+/* 101-binary_tree.c */
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+
+/* Function prototypes */
+size_t binary_tree_height(const binary_tree_t *tree);
+size_t binary_tree_depth(const binary_tree_t *tree);
+void linked_node(link_t **head, const binary_tree_t *tree, size_t level);
+void recursion(link_t **head, const binary_tree_t *tree);
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 
 #endif /* _BINARY_TREES_H_ */
